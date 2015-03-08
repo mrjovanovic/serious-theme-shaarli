@@ -77,7 +77,14 @@ h1 {
     border-width: 0;
     padding: 0;
     background: none;
+    cursor: pointer;
 }
+
+
+.button_edit:hover, .button_delete:hover {
+	color: #e74c3c;
+}	
+
 
 .linkeditbuttons {
     position: absolute;
@@ -96,12 +103,13 @@ h1 {
 
 #pageheader #linkcount {
     float: right;
-    font-style: normal;
+    font-style: italic;
     font-size: 0.7em;
-    color: #bbb;
+    color: #ecf0f1;
     text-align: right;
     padding-right: 5px;
     padding-top: 3px;
+    margin: 5px 5px 0px 0px;
 }
 
 #pageheader {
@@ -146,7 +154,7 @@ h1 {
     box-shadow: none;
     padding: 5px 0px 5px 5px;
     border: none;
-    border-radius: 1px;
+    border-radius: 4px;
     margin: 10px 0px 3px 3px;
     color: #000;
 }
@@ -203,9 +211,9 @@ h1 {
     overflow: visible;
     position: relative;
     border: 0;
-    padding: 0;
+    padding: 0px 3px 0px 3px;
     height: 26px;
-    border-radius: 0px;
+    border-radius: 0px 4px 4px 0px;
     font-style: bold;
     text-shadow: 0 -1px 0 rgba(0,0,0,.3);
     cursor: pointer;
@@ -272,6 +280,15 @@ h1 {
 
 .paging_privatelinks {
     float: left;
+}
+
+.paging_privatelinks img {
+     opacity: 0.3;
+}
+
+.paging_privatelinks img:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .paging_linksperpage {
@@ -369,7 +386,6 @@ a.qrcode img {
 }
 
 #linklist li.private {
-    background: url('../images/private.png') no-repeat 10px center;
     padding-left: 60px;
 }
 
@@ -493,10 +509,8 @@ a.qrcode img {
     border-top: 0px;
     color: #2c3e50;
     clear: both;
-    margin-top: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 35em;
+    margin: 20px auto 20px auto;
+    max-width: 27em;
     line-height: 1.2em;
 }
 
@@ -597,16 +611,10 @@ a.qrcode img {
     margin-right: 10px;
 }
 
-/* If you want thumbnails on the left:
-.thumbnail {
-    float: left;
-    margin-right: 10px;
+.thumbnail img {
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 0.5px 1px #dde4e6; 
 }
-.linkcontainer {
-    position: static;
-    margin-left: 130px;
-}
-*/
 
 /* --- Picture wall CSS --- */
 #picwall_container {
