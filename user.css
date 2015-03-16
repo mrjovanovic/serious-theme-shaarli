@@ -382,5 +382,13 @@ div.dailyEntryDescription {
 	color: #ffffff;
     }
 
+    #linklist li {
+        padding-left: 20px !important;
+    }
+
+    .linkeditbuttons {
+        margin: auto !important;
+    }
+
 }
 
