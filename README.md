@@ -4,13 +4,7 @@ This is a serious and simple theme for [Shaarli](https://github.com/shaarli/Shaa
 
 You can use the [DejaVu Sans Light](http://dejavu-fonts.org/wiki/Main_Page) font (found on most GNU/Linux distributions) if you'd like your Daily Shaarli to look nice.
 
-The theme should work fine in Shaarli upstream, but when using [my fork](https://github.com/mrjovanovic/Shaarli) it has the following benefits:
-
-* It uses Unicode characters instead of icons for different functions (private, edit, delete)
-* The text "Shaare your links" has been removed.
-* The Daily Shaarli has a cleaner look.
-
-I'll be updating the theme periodically as I go along. I am not exactly happy with it yet.
+* I removed the option for Unicode icons, as this decision will be made in Shaarli itself later on.  
 
 ## Screenshots
 
