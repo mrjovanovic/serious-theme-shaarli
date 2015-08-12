@@ -1,7 +1,6 @@
 /* Serious theme for Shaarli
  * https://github.com/shaarli/Shaarli 
- * Copyright Miloš Jovanović <mjovanovic@gmail.com>
- * Licensed under AGPL v3.0
+ * Copyright Miloš Jovanović <mjovanovic@gmail.com> * Licensed under AGPL v3.0
  *
  * Colors:
  * Dark - #2c3e50
@@ -100,6 +99,10 @@ input, textarea {
     margin: 2px 5px 0px 2px;
 }
 
+.tagfilter #tagfilter_value {
+    width: 100%;
+}
+
 .linksperpage input {
     background: #ecf0f1;
     box-shadow: 0.4px 0.4px 2px #2c3e50;
@@ -121,6 +124,8 @@ input, textarea {
     box-shadow: none;
     overflow: visible;
     position: relative;
+    top: 0px;
+    right: 0px;
     border: 0;
     padding: 0px 3px 0px 3px;
     height: 26px;
@@ -355,20 +360,32 @@ div.dailyEntryTitle {
     font-size: 1.6em;
 }
 
+
 div.dailyEntryLinkdate {
     font-size: 0.9em;
     color: #e74c3c;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.dailyEntryPermalink img {
+    display: none;
 }
 
 div.dailyEntryThumbnail {
-    background: #ecf0f1;
+    background: #ffffff;
     margin: 5px 0px 5px 0px;
+}
+div.dailyEntryThumbnail img {
+    box-shadow: 0.5px 0.5px 0.5px 1px #dde4e6; 
+    border-radius: 5px;
 }
 
 div.dailyEntryDescription {
     font-family: 'Liberation Serif', Times, Times New Roman, serif;
     line-height: 125%;
     max-width: 240px;
+    margin: 7px auto 24px 20px;
 }
 
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 854px) {
@@ -377,9 +394,18 @@ div.dailyEntryDescription {
 	width: 90% !important;
     }
 
+
+    #searchform_value, #tagfilter_value {
+        padding: 0px 0px 3px 3px !important;
+    }
+
     #paging_older, #paging_newer, .paging_linksperpage a {
 	background: #2980b9;
 	color: #ffffff;
+    }
+
+    .paging a {
+        color: #ffffff !important;
     }
 
     #linklist li {
@@ -389,6 +415,39 @@ div.dailyEntryDescription {
     .linkeditbuttons {
         margin: auto !important;
     }
+
+div.dailyTitle {
+    font-size: 2em !important;
+    padding: 2px !important;
+}
+
+div.dailyDate {
+    font-size: 0.8em !important;
+    padding: 2px 2px 7px 2px !important;
+}
+
+div.dailyAbout {
+    font-family: "Liberation Sans",Helvetica,Arial,sans-serif;
+    position: relative !important;
+
+}
+
+/* ugly hacks below */
+
+/* ugly hack to hide line-breaks above Daily RSS Feed */
+
+div.dailyAbout br:nth-of-type(3) {
+    display: none !important;
+}
+#closing img {
+    display: none !important;
+}
+
+/* ugly hack to fix tag rename */
+
+#changetag #totag {
+    margin: 40px !important;
+}
 
 }
 
