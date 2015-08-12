@@ -11,10 +11,6 @@ You can use the [DejaVu Sans Light](http://dejavu-fonts.org/wiki/Main_Page) font
 ![main page](scrot.png)
 ![daily shaarli](scrot_daily.png)
 
-Using my fork:
-
-![main page fork](scrot_fork.png)
-
 ## License
 The theme is licensed under the Affero GPL v.3
 <https://gnu.org/licenses/agpl.html>
