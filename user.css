@@ -100,7 +100,7 @@ input, textarea {
 }
 
 .tagfilter #tagfilter_value {
-    width: 100%;
+    width: 55%;
 }
 
 .linksperpage input {
