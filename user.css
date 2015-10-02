@@ -99,8 +99,8 @@ input, textarea {
     margin: 2px 5px 0px 2px;
 }
 
-.tagfilter #tagfilter_value {
-    width: 100%;
+.tagfilter #tagfilter_value, .searchform #searchform_value {
+    width: 30%;
 }
 
 .linksperpage input {
